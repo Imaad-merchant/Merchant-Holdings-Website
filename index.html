@@ -3,211 +3,183 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Merchant Holdings LLC</title>
-  <meta name="description" content="Merchant Holdings LLC is a privately held company that builds and operates focused software products for the long term." />
+  <title>Merchant Holdings LLC &mdash; Micro Private Equity for SaaS</title>
+  <meta name="description" content="Merchant Holdings is a micro private-equity firm that buys, grows, and resells exceptional SaaS companies." />
   <meta property="og:title" content="Merchant Holdings LLC" />
-  <meta property="og:description" content="A privately held company that builds and operates focused software products for the long term." />
+  <meta property="og:description" content="A micro private-equity firm that buys, grows, and resells exceptional SaaS companies." />
   <meta property="og:type" content="website" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23143d2a'/%3E%3Cpath d='M14 46V20l18 16 18-16v26' fill='none' stroke='%234f9e6a' stroke-width='6' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%23143d2a'/%3E%3Cpath d='M14 46V20l18 15 18-15v26' fill='none' stroke='%232f8a56' stroke-width='6' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --green-900: #0d2c1c;
-      --green-800: #143d2a;
-      --green: #2f7d4f;
-      --green-bright: #4f9e6a;
-      --sage: #eef1ea;
-      --sage-2: #e5eade;
-      --ink: #16201a;
-      --muted: #667065;
-      --muted-2: #9aa89b;
-      --line: #dee4d8;
-      --white: #ffffff;
-      --maxw: 1120px;
-      --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+      --cream: #f5f2ea; --cream-2: #ece7db; --paper: #fbfaf5;
+      --green-900: #0e2b1d; --green-800: #143d2a; --green: #216b45;
+      --accent: #2f8a56; --accent-2: #4aa36e;
+      --ink: #17201a; --muted: #5e6a5f; --line: #e2ddd0; --white: #fff;
+      --maxw: 1140px;
+      --serif: "Playfair Display", Georgia, serif;
       --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-    body {
-      margin: 0; background: var(--white); color: var(--ink);
-      font: 16px/1.65 var(--sans); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
-    }
+    body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.65 var(--sans); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
     a { color: inherit; text-decoration: none; }
     .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 28px; }
+    .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; color: var(--accent); }
+    .tag { display: inline-block; font-size: 11.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--green); background: rgba(33,107,69,.10); padding: 7px 14px; border-radius: 100px; }
+    h2.head { font-family: var(--serif); font-weight: 700; font-size: clamp(30px, 4.6vw, 50px); line-height: 1.06; letter-spacing: -0.01em; margin: 16px 0 0; }
 
-    /* ---------- Nav ---------- */
-    header.nav {
-      position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.92);
-      backdrop-filter: saturate(1.4) blur(8px); border-bottom: 1px solid var(--line);
-    }
-    .nav .row { display: flex; align-items: center; justify-content: space-between; height: 74px; }
+    /* Nav */
+    header.nav { position: sticky; top: 0; z-index: 30; background: rgba(245,242,234,.85); backdrop-filter: saturate(1.3) blur(9px); border-bottom: 1px solid var(--line); }
+    .nav .row { display: flex; align-items: center; justify-content: space-between; height: 76px; }
     .brand { display: flex; align-items: center; gap: 12px; }
     .brand .mark { width: 38px; height: 38px; flex: none; }
-    .brand .name { line-height: 1.05; }
-    .brand .name b { display: block; font-weight: 700; font-size: 15px; letter-spacing: .14em; }
-    .brand .name span { display: block; font-size: 9.5px; letter-spacing: .34em; color: var(--muted); text-transform: uppercase; }
+    .brand .name b { display: block; font-weight: 700; font-size: 15px; letter-spacing: .13em; }
+    .brand .name span { display: block; font-size: 9.5px; letter-spacing: .30em; color: var(--muted); text-transform: uppercase; margin-top: 1px; }
     nav.links { display: flex; align-items: center; gap: 34px; }
-    nav.links a { font-size: 13px; font-weight: 500; letter-spacing: .04em; color: #384038; }
+    nav.links a { font-size: 13px; font-weight: 500; letter-spacing: .03em; color: #37423a; }
     nav.links a:hover { color: var(--green); }
-    .btn {
-      display: inline-flex; align-items: center; gap: 7px; background: var(--green-800); color: #fff;
-      font-size: 12.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
-      padding: 12px 20px; border-radius: 4px; transition: background .15s ease;
-    }
-    .btn:hover { background: var(--green); }
-    .navtoggle { display: none; }
+    .btn { display: inline-flex; align-items: center; gap: 7px; background: var(--green-800); color: #fff; font-size: 12.5px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; padding: 12px 20px; border-radius: 6px; transition: background .15s ease; }
+    .btn:hover { background: var(--accent); }
 
-    /* ---------- Hero ---------- */
-    .hero {
-      position: relative; overflow: hidden; color: #eef3ec;
-      background: radial-gradient(120% 130% at 15% 0%, #1b4d33 0%, var(--green-800) 45%, var(--green-900) 100%);
-      min-height: 86vh; display: flex; align-items: center;
-    }
-    .hero .wrap { position: relative; z-index: 2; padding-top: 64px; padding-bottom: 190px; }
-    .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .32em; text-transform: uppercase; color: var(--green-bright); margin: 0 0 22px; }
-    .hero h1 {
-      font-family: var(--serif); font-weight: 700; color: #fff;
-      font-size: clamp(40px, 6.4vw, 76px); line-height: 1.04; letter-spacing: -0.01em; margin: 0 0 24px; max-width: 15ch;
-    }
-    .hero p.lead { font-size: clamp(17px, 2.1vw, 21px); color: #c6d4c6; margin: 0; max-width: 52ch; }
-    .skyline { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 170px; z-index: 1; display: block; }
+    /* Hero */
+    .hero { padding: clamp(70px, 13vw, 150px) 0 clamp(56px, 9vw, 104px); position: relative; }
+    .hero .eyebrow { margin: 0 0 26px; }
+    .hero h1 { font-family: var(--serif); font-weight: 700; color: var(--ink); font-size: clamp(44px, 8vw, 92px); line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 28px; max-width: 15ch; }
+    .hero h1 em { font-style: italic; color: var(--green); }
+    .hero p.lead { font-size: clamp(18px, 2.2vw, 22px); color: #414c43; margin: 0; max-width: 50ch; }
+    .rule { height: 1px; background: var(--line); margin: 0; }
 
-    /* ---------- Stats band ---------- */
-    .stats { background: var(--green-900); }
-    .stats .grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-    .stat { padding: 40px 24px; text-align: center; border-left: 1px solid rgba(255,255,255,.08); }
-    .stat:first-child { border-left: 0; }
-    .stat .n { font-family: var(--serif); font-weight: 700; color: #fff; font-size: clamp(30px, 3.6vw, 46px); line-height: 1; }
-    .stat .l { margin-top: 12px; font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--green-bright); }
+    /* Approach */
+    .approach { background: var(--paper); }
+    section.block { padding: clamp(72px, 10vw, 116px) 0; }
+    .a-head { max-width: 60ch; }
+    .a-head p { font-size: clamp(17px, 1.9vw, 19px); color: #3c463d; margin: 16px 0 0; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 56px; }
+    .step { border-top: 2px solid var(--green); padding-top: 22px; }
+    .step .num { font-family: var(--serif); font-size: 22px; color: var(--accent); font-weight: 700; }
+    .step h3 { font-family: var(--serif); font-weight: 700; font-size: 24px; margin: 8px 0 10px; }
+    .step p { margin: 0; color: var(--muted); font-size: 15.5px; }
 
-    /* ---------- Sections ---------- */
-    section.block { padding: clamp(72px, 10vw, 118px) 0; }
-    .block.sage { background: var(--sage); }
-    .tag {
-      display: inline-block; font-size: 11.5px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
-      color: var(--green); background: rgba(47,125,79,.10); padding: 7px 14px; border-radius: 100px; margin-bottom: 22px;
-    }
-    h2.head { font-family: var(--serif); font-weight: 700; font-size: clamp(30px, 4.4vw, 46px); line-height: 1.08; letter-spacing: -0.01em; margin: 0; }
-    .about .split { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
-    .about p { font-size: clamp(17px, 1.9vw, 19px); color: #333c34; margin: 0 0 18px; }
-    .about p:last-child { margin-bottom: 0; }
-    .about .lead-p { color: var(--ink); font-weight: 500; }
+    /* Facts band */
+    .facts { background: var(--green-800); }
+    .facts .grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .fact { padding: 44px 24px; text-align: center; border-left: 1px solid rgba(255,255,255,.09); }
+    .fact:first-child { border-left: 0; }
+    .fact .n { font-family: var(--serif); font-weight: 700; color: #fff; font-size: clamp(28px, 3.4vw, 44px); line-height: 1; }
+    .fact .l { margin-top: 12px; font-size: 11px; font-weight: 600; letter-spacing: .17em; text-transform: uppercase; color: var(--accent-2); }
 
-    /* ---------- Ventures ---------- */
-    .vent .top { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 44px; flex-wrap: wrap; }
-    .vent .top p { margin: 14px 0 0; color: var(--muted); max-width: 44ch; }
-    .cards { display: grid; grid-template-columns: 1fr; gap: 22px; }
-    .card {
-      display: block; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: #fff;
-      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    }
-    .card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px rgba(20,61,42,.5); border-color: var(--green-bright); }
-    .card .banner {
-      height: 128px; background: radial-gradient(110% 160% at 85% 10%, #2f7d4f 0%, #143d2a 70%);
-      position: relative; display: flex; align-items: center; padding: 0 30px;
-    }
-    .card .banner .kw { font-family: var(--serif); font-weight: 700; color: #fff; font-size: 30px; letter-spacing: .01em; }
-    .card .banner .go { position: absolute; right: 26px; bottom: 22px; color: #bfe6cd; font-size: 13px; font-weight: 600; letter-spacing: .04em; }
+    /* Portfolio */
+    .port .top { max-width: 60ch; }
+    .port .top p { color: var(--muted); margin: 16px 0 0; }
+    .cards { margin-top: 48px; display: grid; grid-template-columns: 1fr; gap: 22px; max-width: 660px; }
+    .card { display: block; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--white); transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 20px 44px -26px rgba(14,43,29,.5); border-color: var(--accent); }
+    .card .banner { height: 132px; background: radial-gradient(120% 170% at 82% 8%, #2f8a56 0%, #143d2a 72%); display: flex; align-items: center; padding: 0 30px; position: relative; }
+    .card .banner .kw { font-family: var(--serif); font-weight: 700; color: #fff; font-size: 32px; }
+    .card .banner .go { position: absolute; right: 26px; bottom: 22px; color: #b9e6cd; font-size: 13px; font-weight: 600; }
     .card .body { padding: 24px 30px 28px; }
-    .card .body h3 { margin: 0 0 6px; font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-    .card .body p { margin: 0; font-size: 16.5px; color: #333c34; }
+    .card .body h3 { margin: 0 0 6px; font-size: 14px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    .card .body p { margin: 0; font-size: 16.5px; color: #3c463d; }
+    .status { display: inline-block; margin-left: 10px; font-size: 10.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); vertical-align: 2px; }
 
-    /* ---------- Footer ---------- */
-    footer.foot { background: var(--green-900); color: #b8c8ba; }
-    footer.foot .row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 40px 0; flex-wrap: wrap; }
+    /* Footer */
+    footer.foot { background: var(--green-900); color: #b6c8bb; }
+    footer.foot .row { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 42px 0; flex-wrap: wrap; }
     footer.foot .brand .name b { color: #eef3ec; }
-    footer.foot .brand .name span { color: #7f927f; }
-    footer.foot .fnote { font-size: 13px; color: #7f927f; }
-    footer.foot a:hover { color: var(--green-bright); }
+    footer.foot .brand .name span { color: #7c917f; }
+    footer.foot .fnote { font-size: 13px; color: #7c917f; }
+    footer.foot a:hover { color: var(--accent-2); }
 
-    @media (max-width: 820px) {
+    @media (max-width: 860px) {
       nav.links { display: none; }
-      .stats .grid { grid-template-columns: repeat(2, 1fr); }
-      .stat:nth-child(3) { border-left: 0; }
-      .about .split { grid-template-columns: 1fr; gap: 28px; }
-      .hero .wrap { padding-bottom: 150px; }
+      .steps { grid-template-columns: 1fr; gap: 26px; margin-top: 40px; }
+      .facts .grid { grid-template-columns: repeat(2, 1fr); }
+      .fact:nth-child(3) { border-left: 0; }
     }
-    @media (min-width: 720px) { .cards { grid-template-columns: 1fr; max-width: 640px; } }
   </style>
 </head>
 <body>
-  <!-- ================= NAV ================= -->
+  <!-- NAV -->
   <header class="nav">
     <div class="wrap row">
       <a class="brand" href="#top" aria-label="Merchant Holdings home">
-        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="12" fill="#143d2a" />
-          <path d="M14 46V20l18 16 18-16v26" fill="none" stroke="#4f9e6a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
-        </svg>
-        <span class="name"><b>MERCHANT HOLDINGS</b><span>Private Holdings Group</span></span>
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="13" fill="#143d2a" /><path d="M14 46V20l18 15 18-15v26" fill="none" stroke="#2f8a56" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" /></svg>
+        <span class="name"><b>MERCHANT HOLDINGS</b><span>Micro Private Equity</span></span>
       </a>
       <nav class="links">
-        <a href="#about">About</a>
-        <a href="#ventures">Ventures</a>
+        <a href="#approach">Approach</a>
+        <a href="#portfolio">Portfolio</a>
       </nav>
       <a class="btn" href="https://gridmail.site" target="_blank" rel="noopener">GridMail &#8599;</a>
     </div>
   </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero" id="top">
-    <div class="wrap">
-      <p class="eyebrow">Merchant Holdings LLC</p>
-      <h1>We build and operate software products.</h1>
-      <p class="lead">A privately held company that backs and runs focused software tools &mdash; built to be useful, owned for the long term, and measured in years, not quarters.</p>
+  <!-- HERO -->
+  <section id="top">
+    <div class="wrap hero">
+      <p class="eyebrow">Merchant Holdings &middot; Houston</p>
+      <h1>We buy, grow, and resell great <em>SaaS</em> companies.</h1>
+      <p class="lead">A micro private-equity firm that acquires focused software products, operates them hands-on, and grows them toward a strong outcome.</p>
     </div>
-    <svg class="skyline" viewBox="0 0 1440 170" preserveAspectRatio="none" aria-hidden="true">
-      <path fill="#0a2416" d="M0,170 V104 H70 V70 H132 V116 H198 V44 H250 V98 H330 V66 H398 V110 H468 V34 H520 V92 H602 V58 H676 V116 H744 V74 H820 V48 H892 V104 H978 V62 H1058 V110 H1128 V38 H1190 V94 H1276 V68 H1356 V112 H1440 V170 Z" />
-    </svg>
+  </section>
+  <div class="rule"></div>
+
+  <!-- APPROACH -->
+  <section class="block approach" id="approach">
+    <div class="wrap">
+      <div class="a-head">
+        <span class="tag">Approach</span>
+        <h2 class="head">Buy well. Operate hands-on. Grow to a strong exit.</h2>
+        <p>We&rsquo;re operators, not just capital. We take focused SaaS products with room to run and do the un-glamorous work of making them better &mdash; then compound that into value.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>Acquire</h3>
+          <p>We buy focused, profitable-or-promising SaaS products &mdash; small enough to move fast, good enough to build on.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>Grow</h3>
+          <p>Hands-on operating: sharpen the product, positioning, retention, and margins. Real work, not a spreadsheet.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>Realize</h3>
+          <p>Scale to a strong outcome &mdash; a healthy hold or a well-timed resale &mdash; and reinvest into the next one.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- ================= STATS ================= -->
-  <div class="stats">
+  <!-- FACTS -->
+  <div class="facts">
     <div class="wrap">
       <div class="grid">
-        <div class="stat"><div class="n">2026</div><div class="l">Founded</div></div>
-        <div class="stat"><div class="n">1</div><div class="l">Operating venture</div></div>
-        <div class="stat"><div class="n">Software</div><div class="l">What we build</div></div>
-        <div class="stat"><div class="n">Long&#8209;term</div><div class="l">How we own</div></div>
+        <div class="fact"><div class="n">2026</div><div class="l">Founded</div></div>
+        <div class="fact"><div class="n">SaaS</div><div class="l">Focus</div></div>
+        <div class="fact"><div class="n">Houston</div><div class="l">Based</div></div>
+        <div class="fact"><div class="n">1</div><div class="l">In portfolio</div></div>
       </div>
     </div>
   </div>
 
-  <!-- ================= ABOUT ================= -->
-  <section class="block sage about" id="about">
-    <div class="wrap split">
-      <div>
-        <span class="tag">About</span>
-        <h2 class="head">Built to last, not to flip.</h2>
-      </div>
-      <div>
-        <p class="lead-p">Merchant Holdings is a small, owner-operated holding company. We build software that solves one problem well and is made to endure &mdash; useful, sustainable, and held for the long term.</p>
-        <p>We&rsquo;d rather go deep on a few things than spread thin across many. Each venture runs independently under the Merchant Holdings umbrella, with the freedom to focus on its customers and the patience to grow at its own pace.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= VENTURES ================= -->
-  <section class="block vent" id="ventures">
+  <!-- PORTFOLIO -->
+  <section class="block port" id="portfolio">
     <div class="wrap">
       <div class="top">
-        <div>
-          <span class="tag">Ventures</span>
-          <h2 class="head">Our ventures</h2>
-          <p>Focused products we build, operate, and stand behind &mdash; starting with our first.</p>
-        </div>
+        <span class="tag">Portfolio</span>
+        <h2 class="head">Where our attention is today.</h2>
+        <p>One company, run with focus &mdash; the first of many.</p>
       </div>
       <div class="cards">
         <a class="card" href="https://gridmail.site" target="_blank" rel="noopener">
-          <div class="banner">
-            <span class="kw">GridMail</span>
-            <span class="go">gridmail.site &#8599;</span>
-          </div>
+          <div class="banner"><span class="kw">GridMail</span><span class="go">gridmail.site &#8599;</span></div>
           <div class="body">
-            <h3>Cold email, built for recruiters</h3>
+            <h3>Cold email for recruiters <span class="status">&bull; Active</span></h3>
             <p>Personalizes each message from the prospect&rsquo;s own website, sends from your own inbox, and stops the moment someone replies &mdash; measured in replies, not send volume.</p>
           </div>
         </a>
@@ -215,17 +187,14 @@
     </div>
   </section>
 
-  <!-- ================= FOOTER ================= -->
+  <!-- FOOTER -->
   <footer class="foot">
     <div class="wrap row">
       <a class="brand" href="#top">
-        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect width="64" height="64" rx="12" fill="#0a2416" />
-          <path d="M14 46V20l18 16 18-16v26" fill="none" stroke="#4f9e6a" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
-        </svg>
-        <span class="name"><b>MERCHANT HOLDINGS</b><span>Private Holdings Group</span></span>
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="13" fill="#0a2416" /><path d="M14 46V20l18 15 18-15v26" fill="none" stroke="#2f8a56" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" /></svg>
+        <span class="name"><b>MERCHANT HOLDINGS</b><span>Micro Private Equity</span></span>
       </a>
-      <div class="fnote">&copy; 2026 Merchant Holdings LLC &nbsp;&middot;&nbsp; Building the next one.</div>
+      <div class="fnote">&copy; 2026 Merchant Holdings LLC &nbsp;&middot;&nbsp; Houston, TX</div>
     </div>
   </footer>
 </body>
