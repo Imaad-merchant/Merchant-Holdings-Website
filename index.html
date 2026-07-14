@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Merchant Holdings LLC</title>
+  <meta name="description" content="Merchant Holdings LLC is a privately held company that builds and operates focused software products." />
+  <meta property="og:title" content="Merchant Holdings LLC" />
+  <meta property="og:description" content="A privately held company that builds and operates focused software products." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f4ed8'/%3E%3Ctext x='50%25' y='54%25' font-family='-apple-system,Segoe UI,Roboto,Arial' font-size='38' font-weight='700' fill='white' text-anchor='middle' dominant-baseline='middle'%3EM%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --bg: #ffffff; --fg: #14171f; --muted: #5b6472; --line: #e8eaef;
+      --accent: #1f4ed8; --card: #f7f8fa; --maxw: 720px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e1116; --fg: #e9ecf1; --muted: #9aa4b2; --line: #222a35;
+        --accent: #6f8cff; --card: #151a22;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--fg);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    header.site { padding: 30px 0; display: flex; align-items: center; gap: 10px; }
+    .mark {
+      width: 30px; height: 30px; border-radius: 8px; background: var(--accent);
+      color: #fff; font-weight: 800; font-size: 17px; display: grid; place-items: center;
+    }
+    .brand { font-weight: 700; letter-spacing: -0.01em; font-size: 17px; }
+    main { padding: 44px 0 8px; }
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 52px); line-height: 1.07; margin: 0 0 18px;
+      letter-spacing: -0.028em; font-weight: 800;
+    }
+    .hero .lead { font-size: clamp(18px, 2.6vw, 21px); color: var(--muted); margin: 0; max-width: 46ch; }
+    section { padding: 44px 0; border-top: 1px solid var(--line); }
+    h2 {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.09em;
+      color: var(--muted); margin: 0 0 18px; font-weight: 700;
+    }
+    .about p { font-size: 18px; margin: 0; max-width: 58ch; }
+    .venture {
+      display: block; text-decoration: none; background: var(--card);
+      border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px;
+      transition: border-color .15s ease, transform .15s ease;
+    }
+    .venture:hover { border-color: var(--accent); transform: translateY(-1px); }
+    .venture .row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .venture h3 { margin: 0 0 8px; font-size: 20px; letter-spacing: -0.01em; }
+    .venture .go { color: var(--accent); font-weight: 600; font-size: 14px; white-space: nowrap; }
+    .venture p { margin: 0; color: var(--muted); }
+    .contact p { margin: 0; font-size: 18px; }
+    .contact a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+    .contact a:hover { border-bottom-color: currentColor; }
+    footer { padding: 34px 0 52px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <span class="mark">M</span>
+      <span class="brand">Merchant Holdings</span>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>We build and operate software products.</h1>
+        <p class="lead">Merchant Holdings LLC is a privately held company that backs and runs focused software tools &mdash; starting with GridMail.</p>
+      </div>
+
+      <section class="about">
+        <h2>About</h2>
+        <p>We build products that solve one problem well and are made to last &mdash; useful, sustainable, and owned for the long term. We&rsquo;d rather go deep on a few things than spread thin across many.</p>
+      </section>
+
+      <section class="ventures">
+        <h2>Ventures</h2>
+        <a class="venture" href="https://gridmail.site" target="_blank" rel="noopener">
+          <div class="row">
+            <h3>GridMail</h3>
+            <span class="go">gridmail.site &rarr;</span>
+          </div>
+          <p>Cold email built for recruiters &mdash; it personalizes each message from the prospect&rsquo;s own website, sends from your own inbox, and stops the moment someone replies.</p>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 Merchant Holdings LLC. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
